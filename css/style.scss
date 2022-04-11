@@ -28,15 +28,15 @@ a{
     left: 0;
     width: 100%;
     box-shadow: 0 0 10px grey;
-    z-index: 99999;
+    z-index: 5;
     background: #fff;
-
+    
     .nav{
         display: flex;
         justify-content: space-between;
         width: 95%;
         margin: 1em auto;
-
+        
         .logo_menu{
             a{
                 color: var(--pri-col);
@@ -44,6 +44,12 @@ a{
             }
         }
 
+        .bar{
+            .bx{
+                font-size: 1.2em;
+            }
+        }
+        
         .navbar{
             position: fixed;
             top: 0;
@@ -51,11 +57,12 @@ a{
             background: var(--pri-col);
             height: 100vh;
             padding: 1em;
-            width: 40%;
+            width: 60%;
             box-shadow: 0 0 5px grey;
             transition: .4s all;
+            z-index: 5;
 
-            .fa-times{
+            .bx-exit{
                 color: #fff;
                 float: right;
             }
@@ -177,6 +184,7 @@ a{
                             position: absolute;
                             top: 60%;
                             width: 95%;
+                            z-index: 1;
                             
                             p{
                                 border-top-right-radius: 5px;
@@ -198,6 +206,7 @@ a{
                     position: absolute;
                     top: 220px;
                     left: 6.5%;
+                    z-index: 1;
                     
                     div{
                         padding: 5px;
@@ -217,7 +226,7 @@ a{
                 position: absolute;
                 top: 220px;
                 left: 32.4%;
-                z-index: 99999;
+                z-index: 1;
                 display: flex;
 
                 .btn{
@@ -591,7 +600,7 @@ a{
                             color: #444444d4;
                             
                             &:hover{
-                                color: #fff;
+                                color: crimson;
                             }
     
                             i{
@@ -610,22 +619,23 @@ a{
                         
                         a{
 
-                            .fa-facebook{
+                            .bxl-facebook-circle{
                                 color: #0008fc;
                             }
-                            .fa-github{
+
+                            .bxl-github{
                                 color: #ffae00;
                             }
-                            .fa-whatsapp{
+                            .bxl-whatsapp{
                                 color: #1b8800;
                             }
-                            .fa-instagram{
+                            .bxl-instagram{
                                 color: #fc0093;
                             }
-                            .fa-twitter{
+                            .bxl-twitter{
                                 color: #0084ff;
                             }
-                            .fa-youtube{
+                            .bxl-youtube{
                                 color: #ff0000;
                             }
     
@@ -860,6 +870,21 @@ a{
                     }
                 }
             }
+        }
+    }
+}
+
+
+.content{
+    position: relative;
+    top: 5em;
+
+    .heading{
+        text-align: center;
+        color: #444444;
+
+        span{
+            color: crimson;
         }
     }
 }
